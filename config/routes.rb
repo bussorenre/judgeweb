@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :exercises
+
   devise_for :users
   
   get 'static_pages/index'

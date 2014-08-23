@@ -1,17 +1,19 @@
 Rails.application.routes.draw do
+  get 'dashboard/index'
+
   resources :exercises
 
   devise_for :users
   
-  get 'static_pages/index'
+  get 'welcome', to: 'static_pages/welcome'
 
-  get 'static_pages/about'
+  get 'about', to: 'static_pages/about'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#index'
+  root 'dashboard#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

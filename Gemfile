@@ -41,3 +41,6 @@ gem 'spring',        group: :development
 # Use Devise for Authentication
 gem 'devise'
 
+# twitter bootstrap
+gem 'twitter-bootstrap3-rails'
+

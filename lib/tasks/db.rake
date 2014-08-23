@@ -4,8 +4,9 @@ namespace :db do
     Rake::Task['db:reset'].invoke
     User.create!(:username => "bussorenre",
                  :email => "bussorenre0088@gmail.com",
-                 :password => "hogepiyo",
-                 :password_confirmation => "hogepiyo")
+                 :password => "chiimama",
+                 :password_confirmation => "chiimama",
+                 :admin => true)
     99.times do |n|
       username  = "ve"+(SecureRandom.random_number*10000).floor.to_s
       email = "example-#{n+1}@de.is.ritsumei.ac.jp"
